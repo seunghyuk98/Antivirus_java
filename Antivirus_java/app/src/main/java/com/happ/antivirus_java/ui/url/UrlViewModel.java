@@ -122,7 +122,7 @@ public class UrlViewModel extends ViewModel {
         String analysisId = postJson.getJSONObject("data").getString("id");
 
         // 2. 일정 시간 대기 후 분석 결과 요청
-        Thread.sleep(15000);
+        Thread.sleep(20000);
 
         URL vtGetUrl = new URL("https://www.virustotal.com/api/v3/analyses/" + analysisId);
         HttpURLConnection getConn = (HttpURLConnection) vtGetUrl.openConnection();
